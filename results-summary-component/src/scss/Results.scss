@@ -1,0 +1,86 @@
+@import "./variables.scss";
+
+.results {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $lightroyalblue;
+  background-image: linear-gradient(
+    to top,
+    $lightroyalblue,
+    $lightroyalblue,
+    $lightslateblue
+  );
+  color: rgb(255, 255, 255);
+  border-radius: 25px;
+  height: 420px;
+  width: 260px;
+  @media only screen and (max-width: 375px) {
+    height: 330px;
+    width: 92vw;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  text-align: center;
+  .heading {
+    padding-top: 14px;
+    font-size: 16px;
+    color: $ightlavender;
+    font-weight: 500;
+    padding-left: 12px;
+    padding-right: 12px;
+    @media only screen and (max-width: 375px) {
+      padding-top: 0px;
+    }
+  }
+  .circle {
+    margin-top: 14px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    @media only screen and (max-width: 375px) {
+      width: 80px;
+      height: 80px;
+    }
+    background-color: $violetblue;
+    background-image: linear-gradient(to bottom, $violetblue, $lightroyalblue);
+    .h72 {
+      font-weight: 800;
+      font-size: 60px;
+      margin: 0;
+      padding: 0;
+    }
+    .hp {
+      font-weight: 500;
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+      color: #8b7eff;
+    }
+  }
+  .great {
+    color: $white;
+    margin: 0;
+    margin-top: 14px;
+    padding: 0;
+    font-weight: 600;
+  }
+  .para {
+    color: $ightlavender;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
