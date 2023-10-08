@@ -11,7 +11,7 @@ export default function Summary() {
       <h2 className="summary-heading">Summary</h2>
       <div className="rectangle-1">
         <div className="left-rect">
-          <img src={iconReaction} height={24} width={24}></img>
+          <img src={iconReaction} height={24} width={24} alt="reaction"></img>
           <p>Reaction</p>
         </div>
         <div className="right-rect">
@@ -22,7 +22,7 @@ export default function Summary() {
       </div>
       <div className="rectangle-2">
         <div className="left-rect">
-          <img src={iconMemory} height={24} width={24}></img>
+          <img src={iconMemory} height={24} width={24} alt="memory"></img>
           <p>Memory</p>
         </div>
         <div className="right-rect">
@@ -33,7 +33,7 @@ export default function Summary() {
       </div>
       <div className="rectangle-3">
         <div className="left-rect">
-          <img src={iconVerbal} height={24} width={24}></img>
+          <img src={iconVerbal} height={24} width={24} alt="verbal"></img>
           <p>Verbal</p>
         </div>
         <div className="right-rect">
@@ -44,7 +44,7 @@ export default function Summary() {
       </div>
       <div className="rectangle-4">
         <div className="left-rect">
-          <img src={iconVisual} height={24} width={24}></img>
+          <img src={iconVisual} height={24} width={24} alt="visual"></img>
           <p>Visual</p>
         </div>
         <div className="right-rect">
