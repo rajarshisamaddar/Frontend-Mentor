@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import "./assets/styles/variables.scss";
+
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter", sans-serif;
+  background-color: $off-white;
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+.footer {
+  text-align: center;
+  font-size: 14px;
+  a {
+    text-decoration: none;
+    color: $red;
+    font-size: 16px;
+    font-weight: 800;
+  }
+}

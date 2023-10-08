@@ -1,0 +1,49 @@
+@import "./variables.scss";
+.main {
+  display: flex;
+  margin-top: 4rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+
+  margin-bottom: 8rem;
+
+  column-gap: 6rem;
+
+  @media only screen and (max-width: $mobile-nav) {
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    column-gap: 0rem;
+    row-gap: 2rem;
+  }
+
+  .item {
+    display: flex;
+    flex: 1;
+    align-items: center;
+
+    img {
+      flex: 1;
+      max-width: 7rem;
+      max-height: 9rem;
+    }
+
+    div {
+      flex: 1;
+      margin-left: 1rem;
+      align-items: center;
+      h1 {
+        margin: 0;
+        color: $grayish-blue;
+      }
+      h4 {
+        color: $very-dark-blue;
+      }
+      p {
+        margin: 0;
+        color: $grayish-blue;
+      }
+    }
+  }
+}

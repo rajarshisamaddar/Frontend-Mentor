@@ -1,0 +1,96 @@
+@import "./variables.scss";
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+
+  @media only screen and (max-width: $mobile-nav) {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .logo {
+    cursor: pointer;
+  }
+
+  .item {
+    display: flex;
+    column-gap: 1.5rem;
+    font-weight: 500;
+    p {
+      cursor: pointer;
+    }
+  }
+
+  .menu {
+    cursor: pointer;
+  }
+}
+
+.mobileMenu {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  //   left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsl(240, 100%, 5%, 50%);
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .right {
+    background: #ffffff;
+    width: 70%;
+    img {
+      cursor: pointer;
+      float: right;
+      margin: 3rem;
+    }
+    .menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      margin-left: 3rem;
+      font-weight: 500;
+      row-gap: 0.5rem;
+      p {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.slideLeftMain {
+  animation: slideRight 1s forwards; /* Animation duration and timing function */
+}
+
+.slideRightMain {
+  animation: slideLeft 1s forwards; /* Animation duration and timing function */
+}
+
+@keyframes slideLeft {
+  0% {
+    left: 100%; /* Start position (off screen to the right) */
+  }
+  100% {
+    left: 0; /* End position (slide to the left) */
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    left: 0; /* Start position (off screen to the left) */
+  }
+  100% {
+    left: 100%; /* End position (slide to the right) */
+  }
+}
